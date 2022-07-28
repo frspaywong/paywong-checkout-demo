@@ -1,0 +1,5 @@
+query getNetworks {
+  Network {
+    ...Network
+  }
+}

@@ -1,0 +1,31 @@
+overwrite: true
+schema: ${REACT_APP_API_ENDPOINT}
+documents: src/client/**/*.graphql
+generates:
+  src/client/index.tsx:
+    hooks:
+      afterOneFileWrite:
+        - prettier --write
+    plugins:
+      - typescript
+      - typescript-operations
+      - typescript-urql
+    config:
+      skipTypename: false
+      withHooks: true
+      withComponent: false
+      flattenGeneratedTypes: false
+      optimizeDocumentNode: true
+      onlyOperationTypes: true
+      preResolveTypes: true
+      maybeValue: T | null | undefined
+      scalars:
+        numeric: number
+        timestamptz: string
+        uuid: string
+      inlineFragmentTypes: combine
+  src/client/schema.json:
+    plugins:
+      - introspection
+    config:
+      minify: true

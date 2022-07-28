@@ -1,0 +1,7 @@
+fragment Network on Network {
+  id
+  currencyId
+  isTestnet
+  name
+  chainId
+}

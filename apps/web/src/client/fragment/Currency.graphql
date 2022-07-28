@@ -1,0 +1,7 @@
+fragment Currency on Currency {
+  id
+  isFiat
+  name
+  priceUSD
+  updatedAt
+}

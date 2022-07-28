@@ -1,0 +1,6 @@
+fragment Token on Token {
+  id
+  currencyId
+  decimals
+  networkId
+}
