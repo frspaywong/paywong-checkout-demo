@@ -1,5 +1,6 @@
 import {Button, Flex, Text} from '@chakra-ui/react';
 import {TextStyle} from 'theme/types';
+import {useMemo} from 'react';
 
 interface ICard {
   type: string;
@@ -32,9 +33,15 @@ const Card = ({type, amount, plan, active = false}: ICard) => {
           / {type}
         </Text>
       </Flex>
-      <Button mt="3" w="full" size="lg" disabled={!active}>
-        {active ? 'Checkout Now' : 'Coming Soon'}
-      </Button>
+
+      <div
+        data-paywong-is-fiat="true"
+        data-paywong-fiat-price={amount}
+        data-paywong-fiat-id="usd"
+        data-paywong
+        data-paywong-style="width: 100%"
+        data-paywong-popup="true"
+      ></div>
     </Flex>
   );
 };
