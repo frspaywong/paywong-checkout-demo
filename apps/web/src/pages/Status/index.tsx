@@ -1,10 +1,11 @@
-import {Badge, Box, Flex, Text} from '@chakra-ui/react';
+import {Alert, Badge, Box, Button, Flex, Text} from '@chakra-ui/react';
 import Navbar from 'components/Navbar';
-import {useSearchParams} from 'react-router-dom';
+import {useNavigate, useSearchParams} from 'react-router-dom';
 import {TextStyle} from 'theme/types';
 import {useGetPaymentQuery} from '../../client';
 
 const Status = () => {
+  const navigate = useNavigate();
   const [searchParams] = useSearchParams();
   const [{data}] = useGetPaymentQuery({
     variables: {id: searchParams.get('id') || ''},
@@ -64,7 +65,21 @@ const Status = () => {
               ${data?.paymentByPk?.token?.currency.id.toUpperCase()}
             </Text>
           </Flex>
+          <Flex justify="space-between" align="center">
+            <Text textStyle={TextStyle.ParagraphMedium} color="white">
+              Network
+            </Text>
+            <Text textStyle={TextStyle.ParagraphMedium} color="white">
+              {data?.paymentByPk?.token?.chain?.name}
+            </Text>
+          </Flex>
+          <Alert mt="4">{data?.paymentByPk?.txHash}</Alert>
         </Box>
+      </Flex>
+      <Flex justify="center">
+        <Button w="fit-content" onClick={() => navigate('/')}>
+          Try Another Transaction
+        </Button>
       </Flex>
     </Box>
   );

@@ -33,10 +33,17 @@ query getPayment($id: String!) {
         priceUSD
         id
       }
+      chain {
+        name
+        id
+        isTestnet
+      }
     }
     fiatCurrencyId
     cryptoPrice
     cryptoTokenId
     isFiatSource
+    transactionId
+    txHash
   }
 }

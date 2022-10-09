@@ -424,7 +424,6 @@ export type PaymentApp_Min_Order_By = {
 
 export type PostPaymentInput = {
   chainId: Scalars['numeric'];
-  paymentId?: InputMaybe<Scalars['String']>;
   txHash: Scalars['String'];
 };
 
@@ -634,6 +633,8 @@ export type GetPaymentQuery = {
         cryptoPrice?: number | null | undefined;
         cryptoTokenId?: string | null | undefined;
         isFiatSource: boolean;
+        transactionId?: string | null | undefined;
+        txHash?: string | null | undefined;
         app: {
           __typename?: 'PaymentApp';
           logoUrl?: string | null | undefined;
@@ -671,6 +672,12 @@ export type GetPaymentQuery = {
                 name: string;
                 priceUSD?: number | null | undefined;
                 id: string;
+              };
+              chain: {
+                __typename?: 'Chain';
+                name: string;
+                id: number;
+                isTestnet: boolean;
               };
             }
           | null
@@ -716,11 +723,18 @@ export const GetPaymentDocument = gql`
           priceUSD
           id
         }
+        chain {
+          name
+          id
+          isTestnet
+        }
       }
       fiatCurrencyId
       cryptoPrice
       cryptoTokenId
       isFiatSource
+      transactionId
+      txHash
     }
   }
 `;
