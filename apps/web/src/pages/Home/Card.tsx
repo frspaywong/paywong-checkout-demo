@@ -1,6 +1,5 @@
-import {Button, Flex, Text} from '@chakra-ui/react';
+import {Flex, Text} from '@chakra-ui/react';
 import {TextStyle} from 'theme/types';
-import {useMemo} from 'react';
 
 interface ICard {
   type: string;
@@ -9,7 +8,7 @@ interface ICard {
   active?: boolean;
 }
 
-const Card = ({type, amount, plan, active = false}: ICard) => {
+const Card = ({type, amount, plan}: ICard) => {
   return (
     <Flex
       flexDir="column"

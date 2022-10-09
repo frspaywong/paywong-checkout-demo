@@ -7,15 +7,13 @@ import {
   Image,
   Tab,
   TabList,
-  TabPanel,
-  TabPanels,
   Tabs,
   Text,
 } from '@chakra-ui/react';
-import {ColorMix, TextStyle} from 'theme/types';
 import LogoMark from 'assets/LogoMark.svg';
 import WordMark from 'assets/WordMark.svg';
 import {useEffect, useState} from 'react';
+import {TextStyle} from 'theme/types';
 import Card from './Card';
 
 // @ts-ignore
