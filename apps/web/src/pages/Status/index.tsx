@@ -11,8 +11,6 @@ const Status = () => {
     pause: !searchParams.get('id'),
   });
 
-  console.log(data);
-
   return (
     <Box
       display="flex"
