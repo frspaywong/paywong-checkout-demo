@@ -3316,9 +3316,9 @@
     loader-utils "^2.0.0"
 
 "@swc/helpers@^0.4.11":
-  version "0.4.11"
-  resolved "https://registry.yarnpkg.com/@swc/helpers/-/helpers-0.4.11.tgz#db23a376761b3d31c26502122f349a21b592c8de"
-  integrity sha512-rEUrBSGIoSFuYxwBYtlUFMlE2CwGhmW+w9355/5oduSw8e5h2+Tj4UrAGNNgP9915++wj5vkQo0UuOBqOAq4nw==
+  version "0.4.12"
+  resolved "https://registry.yarnpkg.com/@swc/helpers/-/helpers-0.4.12.tgz#203243e78cff3c87c081c97ae548ab33e2503573"
+  integrity sha512-R6RmwS9Dld5lNvwKlPn62+piU+WDG1sMfsnfJioXCciyko/gZ0DQ4Mqglhq1iGU1nQ/RcGkAwfMH+elMSkJH3Q==
   dependencies:
     tslib "^2.4.0"
 
@@ -3556,9 +3556,9 @@
     "@types/istanbul-lib-report" "*"
 
 "@types/jest@*", "@types/jest@^29.1.1":
-  version "29.1.1"
-  resolved "https://registry.yarnpkg.com/@types/jest/-/jest-29.1.1.tgz#cf21a0835a1ba9a30ea1966019f1261c6a114c92"
-  integrity sha512-U9Ey07dGWl6fUFaIaUQUKWG5NoKi/zizeVQCGV8s4nSU0jPgqphVZvS64+8BtWYvrc3ZGw6wo943NSYPxkrp/g==
+  version "29.1.2"
+  resolved "https://registry.yarnpkg.com/@types/jest/-/jest-29.1.2.tgz#7ad8077043ab5f6c108c8111bcc1d224e5600a87"
+  integrity sha512-y+nlX0h87U0R+wsGn6EBuoRWYyv3KFtwRNP3QWp9+k2tJ2/bqcGS3UxD7jgT+tiwJWWq3UsyV4Y+T6rsMT4XMg==
   dependencies:
     expect "^29.0.0"
     pretty-format "^29.0.0"
@@ -3626,9 +3626,9 @@
   integrity sha512-3rKg/L5x0rofKuuUt5zlXzOnKyIHXmIu5R8A0TuNDMF2062/AOIDBciFIjToLEJ/9F9DzkHNot+BpNsMI1OLdQ==
 
 "@types/node@^18.8.2":
-  version "18.8.2"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-18.8.2.tgz#17d42c6322d917764dd3d2d3a10d7884925de067"
-  integrity sha512-cRMwIgdDN43GO4xMWAfJAecYn8wV4JbsOGHNfNUIDiuYkUYAR5ec4Rj7IO2SAhFPEfpPtLtUTbbny/TCT7aDwA==
+  version "18.8.3"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-18.8.3.tgz#ce750ab4017effa51aed6a7230651778d54e327c"
+  integrity sha512-0os9vz6BpGwxGe9LOhgP/ncvYN5Tx1fNcd2TM3rD/aCGBkysb+ZWpXEocG24h6ZzOi13+VB8HndAQFezsSOw1w==
 
 "@types/numeral@^2.0.2":
   version "2.0.2"
@@ -7083,6 +7083,11 @@ graphql-tag@^2.11.0:
   dependencies:
     tslib "^2.1.0"
 
+graphql-ws@^5.11.2:
+  version "5.11.2"
+  resolved "https://registry.yarnpkg.com/graphql-ws/-/graphql-ws-5.11.2.tgz#d5e0acae8b4d4a4cf7be410a24135cfcefd7ddc0"
+  integrity sha512-4EiZ3/UXYcjm+xFGP544/yW1+DVI8ZpKASFbzrV5EDTFWJp0ZvLl4Dy2fSZAzz9imKp5pZMIcjB0x/H69Pv/6w==
+
 graphql-ws@^5.4.1, graphql-ws@^5.9.1:
   version "5.9.1"
   resolved "https://registry.yarnpkg.com/graphql-ws/-/graphql-ws-5.9.1.tgz#9c0fa48ceb695d61d574ed3ab21b426729e87f2d"
@@ -9457,10 +9462,10 @@ path-type@^4.0.0:
   resolved "https://registry.yarnpkg.com/path-type/-/path-type-4.0.0.tgz#84ed01c0a7ba380afe09d90a8c180dcd9d03043b"
   integrity sha512-gDKb8aZMDeD/tZWs9P6+q0J9Mwkdl6xMV8TjnGP3qJVJ06bdMgkbBlLU8IdfOsIsFz2BW1rNVT3XuNEl8zPAvw==
 
-paywong-sdk@^0.1.8:
-  version "0.1.8"
-  resolved "https://registry.yarnpkg.com/paywong-sdk/-/paywong-sdk-0.1.8.tgz#bd17385723c637e07d4d20148950b8d511c1b043"
-  integrity sha512-7vg3ovvTsibWtPclFGIVN2MEfd3lOJAOJuZ9hVXdbjfuj0fc7PGibbarhSNIQnhFX6I250/rkTdPB/sGCHjMqA==
+paywong-sdk-react@^0.4.4:
+  version "0.4.4"
+  resolved "https://registry.yarnpkg.com/paywong-sdk-react/-/paywong-sdk-react-0.4.4.tgz#cb66920dc288ce03b5bb3b957894327f739bd917"
+  integrity sha512-m3ix6rpxOvHKooq63ixUEyuU1AHOL99bhIXZhktaCvQfv2NRc0zE250shNYrqkZE7hbTxG2Jxz0JeR0xadlnrw==
   dependencies:
     "@fontsource/inter" "^4.5.12"
     "@swc/helpers" "^0.4.11"
@@ -9473,6 +9478,7 @@ paywong-sdk@^0.1.8:
     "@types/react-dom" "^18.0.6"
     graphql "^16.6.0"
     graphql-request "^5.0.0"
+    graphql-ws "^5.11.2"
     react "^18.1.0"
     react-dom "^18.1.0"
     react-scripts "5.0.1"

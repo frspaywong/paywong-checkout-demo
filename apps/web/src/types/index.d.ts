@@ -1,6 +1,6 @@
 export {};
 
-`declare module 'paywong-sdk';`;
+declare module 'paywong-sdk';
 
 declare global {
   interface Window {

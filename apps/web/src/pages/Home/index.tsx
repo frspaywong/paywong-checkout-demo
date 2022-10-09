@@ -1,4 +1,5 @@
 import {
+  Badge,
   Box,
   Button,
   Flex,
@@ -16,7 +17,9 @@ import LogoMark from 'assets/LogoMark.svg';
 import WordMark from 'assets/WordMark.svg';
 import {useEffect, useState} from 'react';
 import Card from './Card';
-import Paywong from 'paywong-sdk';
+
+// @ts-ignore
+import Paywong from 'paywong-sdk-react';
 
 const Home = () => {
   const [tabIndex, setTabIndex] = useState(0);
@@ -25,7 +28,7 @@ const Home = () => {
     const paywong = new Paywong();
     paywong.initialize(
       'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjbGFpbXMiOnsieC1oYXN1cmEtYWxsb3dlZC1yb2xlcyI6WyJhcHAiXSwieC1oYXN1cmEtZGVmYXVsdC1yb2xlIjoiYXBwIiwieC1oYXN1cmEtYXBwLWlkIjoiZDgzMTNkZGEtODZkZS00YmFlLWIyODAtNGE0MzM0NDQ1MzRiIiwieC1oYXN1cmEtYWNjb3VudC1pZCI6IlR1TnBiMjBXTSIsIngtaGFzdXJhLWFwcC1zYWx0IjoibWt0In0sImlhdCI6MTY2NDc2NjgwNX0.YdaIeGNiO4gHAeWDkVzguAunuiqENavSK0-m4ONHzUg',
-      'development'
+      'staging'
     );
   }, [tabIndex]);
 
@@ -92,23 +95,35 @@ const Home = () => {
                   Lifetime
                 </Text>
               </Tab>
-              <Tab _selected={{bg: '#4B4EFC', color: '#ffff', rounded: 'md'}}>
-                <Text
-                  textStyle={TextStyle.H6}
-                  color="white"
-                  fontWeight="semibold"
-                >
-                  Monthly
-                </Text>
+              <Tab
+                isDisabled
+                _selected={{bg: '#4B4EFC', color: '#ffff', rounded: 'md'}}
+              >
+                <HStack gap="2" flexDir="column">
+                  <Text
+                    textStyle={TextStyle.H6}
+                    color="white"
+                    fontWeight="semibold"
+                  >
+                    Monthly
+                  </Text>
+                  <Badge colorScheme="blue">Coming Soon</Badge>
+                </HStack>
               </Tab>
-              <Tab _selected={{bg: '#4B4EFC', color: '#ffff', rounded: 'md'}}>
-                <Text
-                  textStyle={TextStyle.H6}
-                  color="white"
-                  fontWeight="semibold"
-                >
-                  Anually
-                </Text>
+              <Tab
+                isDisabled
+                _selected={{bg: '#4B4EFC', color: '#ffff', rounded: 'md'}}
+              >
+                <HStack gap="2" flexDir="column">
+                  <Text
+                    textStyle={TextStyle.H6}
+                    color="white"
+                    fontWeight="semibold"
+                  >
+                    Anually
+                  </Text>
+                  <Badge colorScheme="blue">Coming Soon</Badge>
+                </HStack>
               </Tab>
             </TabList>
           </Tabs>
@@ -120,19 +135,9 @@ const Home = () => {
           >
             {tabIndex === 0 && (
               <>
-                <Card
-                  type="Lifetime"
-                  plan="Bootstrap 🍃"
-                  amount={1500}
-                  active
-                />
-                <Card
-                  type="Lifetime"
-                  plan="Start Up  🛠️"
-                  amount={3000}
-                  active
-                />
-                <Card type="Lifetime" plan="Scale Up 🚀" amount={5000} active />
+                <Card type="Lifetime" plan="Bootstrap 🍃" amount={5} active />
+                <Card type="Lifetime" plan="Start Up  🛠️" amount={10} active />
+                <Card type="Lifetime" plan="Scale Up 🚀" amount={20} active />
               </>
             )}
             {tabIndex === 1 && (
