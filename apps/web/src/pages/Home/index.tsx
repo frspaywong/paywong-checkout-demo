@@ -1,10 +1,8 @@
 import {
   Badge,
   Box,
-  Button,
   Flex,
   HStack,
-  Image,
   Tab,
   TabList,
   Tabs,

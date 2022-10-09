@@ -1,27 +1,12 @@
-import {
-  Badge,
-  Box,
-  Flex,
-  Modal,
-  Table,
-  TableCaption,
-  TableContainer,
-  Tbody,
-  Td,
-  Text,
-  Tfoot,
-  Th,
-  Thead,
-  Tr,
-} from '@chakra-ui/react';
+import {Badge, Box, Flex, Text} from '@chakra-ui/react';
 import Navbar from 'components/Navbar';
 import {useSearchParams} from 'react-router-dom';
-import {useGetPaymentQuery} from '../../client';
 import {TextStyle} from 'theme/types';
+import {useGetPaymentQuery} from '../../client';
 
 const Status = () => {
   const [searchParams] = useSearchParams();
-  const [{data, fetching}] = useGetPaymentQuery({
+  const [{data}] = useGetPaymentQuery({
     variables: {id: searchParams.get('id') || ''},
     pause: !searchParams.get('id'),
   });
