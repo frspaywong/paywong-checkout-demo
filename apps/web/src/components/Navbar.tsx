@@ -29,7 +29,7 @@ const Navbar = () => {
       </Flex>
 
       <Button
-        onClick={() => window.open('https://waitlist.paywong.com/waitlist/')}
+        onClick={() => window.open('https://waitlist.paywong.com/waitlist')}
       >
         Sign Up
       </Button>
