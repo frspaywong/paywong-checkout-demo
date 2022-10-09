@@ -39,7 +39,7 @@ const Card = ({type, amount, plan}: ICard) => {
         data-paywong-fiat-id="usd"
         data-paywong
         data-paywong-button-style="width: 100%;"
-        data-paywong-callback-url="localhost:3006/status"
+        data-paywong-callback-url="https://demo.checkout.paywong.com/status"
       />
     </Flex>
   );
