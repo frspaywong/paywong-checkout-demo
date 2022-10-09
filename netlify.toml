@@ -1,6 +1,9 @@
 [build]
     publish = "apps/web/build"
     command = "yarn run build"
+    NETLIFY_USE_YARN = "true"
+
+
 
 [[redirects]]
     from = "*"
