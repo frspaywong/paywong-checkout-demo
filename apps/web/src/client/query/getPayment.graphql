@@ -1,0 +1,42 @@
+query getPayment($id: String!) {
+  paymentByPk(id: $id) {
+    id
+    app {
+      logoUrl
+      name
+      tokens {
+        token {
+          currencyId
+          chain {
+            name
+          }
+          currency {
+            priceUSD
+            name
+          }
+          decimals
+        }
+      }
+    }
+    status
+    receiverAddress
+    fiatPrice
+    fiatCurrency {
+      id
+      name
+      priceUSD
+    }
+    token {
+      id
+      currency {
+        name
+        priceUSD
+        id
+      }
+    }
+    fiatCurrencyId
+    cryptoPrice
+    cryptoTokenId
+    isFiatSource
+  }
+}

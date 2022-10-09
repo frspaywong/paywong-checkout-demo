@@ -4,6 +4,7 @@ import {lazy, ReactNode, Suspense} from 'react';
 import {RouteObject, useRoutes} from 'react-router-dom';
 
 const Home = lazy(() => import('./Home'));
+const Status = lazy(() => import('./Status'));
 
 type RouteLoaderProps = {
   children: ReactNode;
@@ -33,6 +34,14 @@ const Routers = () => {
         element: (
           <RouteLoader>
             <Home />
+          </RouteLoader>
+        ),
+      },
+      {
+        path: '/status',
+        element: (
+          <RouteLoader>
+            <Status />
           </RouteLoader>
         ),
       },

@@ -32,7 +32,6 @@ const Card = ({type, amount, plan}: ICard) => {
           / {type}
         </Text>
       </Flex>
-
       <div
         data-paywong-is-fiat="true"
         data-paywong-fiat-price={amount}

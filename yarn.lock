@@ -9462,10 +9462,10 @@ path-type@^4.0.0:
   resolved "https://registry.yarnpkg.com/path-type/-/path-type-4.0.0.tgz#84ed01c0a7ba380afe09d90a8c180dcd9d03043b"
   integrity sha512-gDKb8aZMDeD/tZWs9P6+q0J9Mwkdl6xMV8TjnGP3qJVJ06bdMgkbBlLU8IdfOsIsFz2BW1rNVT3XuNEl8zPAvw==
 
-paywong-sdk-react@^0.4.4:
-  version "0.4.4"
-  resolved "https://registry.yarnpkg.com/paywong-sdk-react/-/paywong-sdk-react-0.4.4.tgz#cb66920dc288ce03b5bb3b957894327f739bd917"
-  integrity sha512-m3ix6rpxOvHKooq63ixUEyuU1AHOL99bhIXZhktaCvQfv2NRc0zE250shNYrqkZE7hbTxG2Jxz0JeR0xadlnrw==
+paywong-sdk-react@^0.4.5:
+  version "0.4.5"
+  resolved "https://registry.yarnpkg.com/paywong-sdk-react/-/paywong-sdk-react-0.4.5.tgz#da314946079fd1916e9f804f06440bc6d6efabc9"
+  integrity sha512-GiY33QcbsezUniBSjCFAYKs3GZZ7kq0dZgU3828JF8YbvNCTNuRO4klSmZ764kbt3/E1TGIXC4GsgAnH30ZLxA==
   dependencies:
     "@fontsource/inter" "^4.5.12"
     "@swc/helpers" "^0.4.11"

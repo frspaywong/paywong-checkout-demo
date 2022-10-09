@@ -10,14 +10,14 @@ import {
   Tabs,
   Text,
 } from '@chakra-ui/react';
-import LogoMark from 'assets/LogoMark.svg';
-import WordMark from 'assets/WordMark.svg';
+
 import {useEffect, useState} from 'react';
 import {TextStyle} from 'theme/types';
 import Card from './Card';
 
 // @ts-ignore
 import Paywong from 'paywong-sdk-react';
+import Navbar from 'components/Navbar';
 
 const Home = () => {
   const [tabIndex, setTabIndex] = useState(0);
@@ -41,26 +41,7 @@ const Home = () => {
         border="1px solid black"
         p="10"
       >
-        <Flex justify="space-between" align="center">
-          <Flex gap="4">
-            <Flex align="center" gap="4">
-              <Image src={LogoMark} w="32px" />
-              <Image src={WordMark} w="123px" />
-            </Flex>
-            <Text
-              h="fit-content"
-              p="1"
-              textStyle={TextStyle.ParagraphXSmall}
-              color="#ffff"
-              bg="#5B69FF"
-              rounded="md"
-            >
-              Demo
-            </Text>
-          </Flex>
-
-          <Button>Sign Up</Button>
-        </Flex>
+        <Navbar />
         <Flex textAlign="center" flexDir="column" align="center" gap="5">
           <Text textStyle={TextStyle.H1} color="white" fontWeight="bold">
             Checkout Demo
