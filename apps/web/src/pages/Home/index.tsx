@@ -23,7 +23,7 @@ const Home = () => {
   useEffect(() => {
     const paywong = new Paywong();
     paywong.initialize(
-      'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjbGFpbXMiOnsieC1oYXN1cmEtYWxsb3dlZC1yb2xlcyI6WyJhcHAiXSwieC1oYXN1cmEtZGVmYXVsdC1yb2xlIjoiYXBwIiwieC1oYXN1cmEtYXBwLWlkIjoiZDgzMTNkZGEtODZkZS00YmFlLWIyODAtNGE0MzM0NDQ1MzRiIiwieC1oYXN1cmEtYWNjb3VudC1pZCI6IlR1TnBiMjBXTSIsIngtaGFzdXJhLWFwcC1zYWx0IjoibWt0In0sImlhdCI6MTY2NDc2NjgwNX0.YdaIeGNiO4gHAeWDkVzguAunuiqENavSK0-m4ONHzUg',
+      'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjbGFpbXMiOnsieC1oYXN1cmEtYWxsb3dlZC1yb2xlcyI6WyJhcHAiXSwieC1oYXN1cmEtZGVmYXVsdC1yb2xlIjoiYXBwIiwieC1oYXN1cmEtYXBwLWlkIjoiZDgzMTNkZGEtODZkZS00YmFlLWIyODAtNGE0MzM0NDQ1MzRiIiwieC1oYXN1cmEtYWNjb3VudC1pZCI6IlR1TnBiMjBXTSIsIngtaGFzdXJhLWFwcC1zYWx0IjoiWUoyIn0sImlhdCI6MTY2NDg2NjIxNn0.MW7T3DTXz3OU3AzLNK42vsSWcc2rQQglaQ-1rGuyhCg',
       'staging'
     );
   }, [tabIndex]);
