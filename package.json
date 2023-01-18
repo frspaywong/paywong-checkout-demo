@@ -14,14 +14,16 @@
     "codegen": "turbo run codegen"
   },
   "devDependencies": {
+    "dotenv": "latest",
     "prettier": "latest",
-    "turbo": "latest",
-    "dotenv": "latest"
+    "turbo": "latest"
   },
   "engines": {
     "npm": ">=7.0.0",
     "node": ">=14.0.0"
   },
-  "dependencies": {},
-  "packageManager": "yarn@1.22.17"
+  "packageManager": "yarn@1.22.17",
+  "dependencies": {
+    "@paywong/react": "^1.0.51"
+  }
 }

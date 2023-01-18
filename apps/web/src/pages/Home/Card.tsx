@@ -1,5 +1,6 @@
 import {Flex, Text} from '@chakra-ui/react';
 import {TextStyle} from 'theme/types';
+import {PaywongButton, PaywongEnvironment} from '@paywong/react';
 
 interface ICard {
   type: string;
@@ -32,14 +33,13 @@ const Card = ({type, amount, plan}: ICard) => {
           / {type}
         </Text>
       </Flex>
-      <div
-        data-paywong-is-fiat="true"
-        data-paywong-fiat-price={amount}
-        data-paywong-fiat-id="usd"
-        data-paywong
-        data-paywong-button-style="width: 100%;"
-        data-paywong-success-url="https://demo.checkout.paywong.com/status"
-        data-paywong-fail-url="https://demo.checkout.paywong.com/status"
+      <PaywongButton
+        amount={{currencyId: 'usd', price: amount}}
+        buttonOptions={{
+          containerStyle: {gap: '6px'},
+          buttonStyle: {width: '100%', fontWeight: '600'},
+        }}
+        environment={PaywongEnvironment.STAGING}
       />
     </Flex>
   );

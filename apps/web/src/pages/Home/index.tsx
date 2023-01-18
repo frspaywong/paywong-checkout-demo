@@ -13,20 +13,10 @@ import {useEffect, useState} from 'react';
 import {TextStyle} from 'theme/types';
 import Card from './Card';
 
-// @ts-ignore
-import Paywong from 'paywong-sdk-react';
 import Navbar from 'components/Navbar';
 
 const Home = () => {
   const [tabIndex, setTabIndex] = useState(0);
-
-  useEffect(() => {
-    const paywong = new Paywong();
-    paywong.initialize(
-      'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjbGFpbXMiOnsieC1oYXN1cmEtYWxsb3dlZC1yb2xlcyI6WyJhcHAiXSwieC1oYXN1cmEtZGVmYXVsdC1yb2xlIjoiYXBwIiwieC1oYXN1cmEtYXBwLWlkIjoiMjcxYzQyM2ItNjBmYS00ZmUxLWI1NGEtNTE2OGM2NzMwODUxIiwieC1oYXN1cmEtYWNjb3VudC1pZCI6IlhLWUQ1U0lIWiIsIngtaGFzdXJhLWFwcC1zYWx0IjoiUWIyIn0sImlhdCI6MTY2NjMxNzU0Mn0.d0D6297dJ2q34ve4gCs6qEvHQDUpgvUGJ9JYW-Wn-do',
-      'staging'
-    );
-  }, [tabIndex]);
 
   return (
     <>
