@@ -30,7 +30,7 @@ const Card = ({type, amount, plan}: ICard) => {
           ${amount}
         </Text>
         <Text textStyle={TextStyle.ParagraphLarge} color="white">
-          / {type}
+          / {type} s
         </Text>
       </Flex>
       <PaywongButton
