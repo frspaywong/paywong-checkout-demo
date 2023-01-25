@@ -37,7 +37,7 @@ const Card = ({type, amount, plan}: ICard) => {
         amount={{currencyId: 'usd', subtotal: amount}}
         buttonOptions={{
           containerStyle: {gap: '6px'},
-          buttonStyle: {width: '100%', fontWeight: '600'},
+          buttonStyle: {width: '100%'},
         }}
         environment={PaywongEnvironment.STAGING}
       />
