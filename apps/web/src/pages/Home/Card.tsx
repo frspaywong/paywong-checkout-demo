@@ -30,11 +30,11 @@ const Card = ({type, amount, plan}: ICard) => {
           ${amount}
         </Text>
         <Text textStyle={TextStyle.ParagraphLarge} color="white">
-          / {type} s
+          / {type}
         </Text>
       </Flex>
       <PaywongButton
-        amount={{currencyId: 'usd', price: amount}}
+        amount={{currencyId: 'usd', subtotal: amount}}
         buttonOptions={{
           containerStyle: {gap: '6px'},
           buttonStyle: {width: '100%', fontWeight: '600'},

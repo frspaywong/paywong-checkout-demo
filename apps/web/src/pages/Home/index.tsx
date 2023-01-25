@@ -9,7 +9,7 @@ import {
   Text,
 } from '@chakra-ui/react';
 
-import {useEffect, useState} from 'react';
+import {useState} from 'react';
 import {TextStyle} from 'theme/types';
 import Card from './Card';
 
