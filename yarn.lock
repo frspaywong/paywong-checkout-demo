@@ -3000,16 +3000,6 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
-"@paywong/react@^1.0.57":
-  version "1.0.57"
-  resolved "https://npm.pkg.github.com/download/@paywong/react/1.0.57/67bb2e0fc6ca381a778529e8e375a58e81815ccb#67bb2e0fc6ca381a778529e8e375a58e81815ccb"
-  integrity sha512-B7AlglsyoibXmEhi0p0Hb9qvL5sDWGeOU1R9yB5mpTGcUFCrSIKaeITiSYTNT5+8bkW6ChVTvXSf7pvsAQhWKA==
-  dependencies:
-    "@fontsource/inter" "^4.5.14"
-    graphql-request "^5.1.0"
-    react "^17.0.2"
-    tslib "^2.4.1"
-
 "@pmmmwh/react-refresh-webpack-plugin@^0.5.3":
   version "0.5.7"
   resolved "https://registry.npmjs.org/@pmmmwh/react-refresh-webpack-plugin/-/react-refresh-webpack-plugin-0.5.7.tgz"
@@ -9152,6 +9142,16 @@ path-type@^4.0.0:
   version "4.0.0"
   resolved "https://registry.npmjs.org/path-type/-/path-type-4.0.0.tgz"
   integrity sha512-gDKb8aZMDeD/tZWs9P6+q0J9Mwkdl6xMV8TjnGP3qJVJ06bdMgkbBlLU8IdfOsIsFz2BW1rNVT3XuNEl8zPAvw==
+
+paywong-react@^1.0.57:
+  version "1.0.57"
+  resolved "https://registry.yarnpkg.com/paywong-react/-/paywong-react-1.0.57.tgz#74330cfe85dbe0417bf4dc2dfd57436575132c77"
+  integrity sha512-IjGh0yWL0okaIZx2pgI9XWY6IMKxxz+eQVp4QCni0b89J66DytDFM6H6yOBK5kfw/m5WIAShPqtsKyq0+dEb4w==
+  dependencies:
+    "@fontsource/inter" "^4.5.14"
+    graphql-request "^5.1.0"
+    react "^17.0.2"
+    tslib "^2.4.1"
 
 performance-now@^2.1.0:
   version "2.1.0"

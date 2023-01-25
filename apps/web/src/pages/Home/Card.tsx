@@ -1,6 +1,6 @@
 import {Flex, Text} from '@chakra-ui/react';
 import {TextStyle} from 'theme/types';
-import {PaywongButton, PaywongEnvironment} from '@paywong/react';
+import {PaywongButton, PaywongEnvironment} from 'paywong-react';
 
 interface ICard {
   type: string;
