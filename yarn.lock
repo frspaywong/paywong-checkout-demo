@@ -3000,10 +3000,10 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
-"@paywong/react@^1.0.56":
-  version "1.0.56"
-  resolved "https://npm.pkg.github.com/download/@paywong/react/1.0.56/7e030220b15bcf4764fa9b7307c90bf793e41aa8#7e030220b15bcf4764fa9b7307c90bf793e41aa8"
-  integrity sha512-2dU6neJGFhMX9NWg4uuRsBxumik4LRKISfB3rk6g5etWh0/AjmnP5IUEJC9F8nlGeEw0CQk7k1D2lEiuaXQNMg==
+"@paywong/react@^1.0.57":
+  version "1.0.57"
+  resolved "https://npm.pkg.github.com/download/@paywong/react/1.0.57/67bb2e0fc6ca381a778529e8e375a58e81815ccb#67bb2e0fc6ca381a778529e8e375a58e81815ccb"
+  integrity sha512-B7AlglsyoibXmEhi0p0Hb9qvL5sDWGeOU1R9yB5mpTGcUFCrSIKaeITiSYTNT5+8bkW6ChVTvXSf7pvsAQhWKA==
   dependencies:
     "@fontsource/inter" "^4.5.14"
     graphql-request "^5.1.0"
