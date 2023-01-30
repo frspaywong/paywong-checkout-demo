@@ -39,9 +39,6 @@ const Card = ({type, amount, plan}: ICard) => {
           containerStyle: {gap: '6px'},
           buttonStyle: {width: '100%'},
         }}
-        paymentOptions={{
-          returnUrl: 'https://demo.paywong.com',
-        }}
       />
     </Flex>
   );
