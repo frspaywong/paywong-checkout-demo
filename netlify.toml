@@ -29,3 +29,6 @@
     for = "/index.html"
     [headers.values]
         Cache-Control = "no-cache"
+
+[[vars]]
+    REACT_APP_PAYWONG_PUBLIC_KEY="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjbGFpbXMiOnsieC1oYXN1cmEtYWxsb3dlZC1yb2xlcyI6WyJhcHAtcHVibGljIl0sIngtaGFzdXJhLWRlZmF1bHQtcm9sZSI6ImFwcC1wdWJsaWMiLCJ4LWhhc3VyYS1hcHAtaWQiOiJkM2NkYTJkZi1hNDAxLTQ1MzgtOGE3Zi04YzUzOTkxNGYxMDQiLCJ4LWhhc3VyYS1hY2NvdW50LWlkIjoiU2tTQ1V3T2pyIiwieC1oYXN1cmEtYXBwLXNhbHQiOiJWRFgifSwiaWF0IjoxNjc1MDQ2ODAzfQ.i2YP1QqCXTv0p8P3-UmJa52jzuYLzBz6LSlz1o3LQD0"
