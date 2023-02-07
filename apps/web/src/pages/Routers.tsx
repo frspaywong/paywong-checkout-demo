@@ -1,7 +1,8 @@
-import { Center, Spinner } from '@chakra-ui/react';
+import {Center, Spinner} from '@chakra-ui/react';
 import FullScreenLayout from 'components/layouts/FullScreenLayout';
-import { lazy, ReactNode, Suspense } from 'react';
-import { RouteObject, useRoutes } from 'react-router-dom';
+import {lazy, ReactNode, Suspense} from 'react';
+import {RouteObject, useRoutes} from 'react-router-dom';
+import GetTokens from './Home/GetTokens';
 
 const Home = lazy(() => import('./Home'));
 const Status = lazy(() => import('./Status'));
@@ -36,6 +37,16 @@ const Routers = () => {
             <Home />
           </RouteLoader>
         ),
+        children: [
+          {
+            path: '/tokens',
+            element: (
+              <RouteLoader>
+                <GetTokens />
+              </RouteLoader>
+            ),
+          },
+        ],
       },
       {
         path: '/status',

@@ -14,6 +14,7 @@ import {TextStyle} from 'theme/types';
 import Card from './Card';
 
 import Navbar from 'components/Navbar';
+import {Outlet} from 'react-router-dom';
 
 const Home = () => {
   const [tabIndex, setTabIndex] = useState(0);
@@ -124,6 +125,7 @@ const Home = () => {
           </Flex>
         </Flex>
       </Box>
+      <Outlet />
     </>
   );
 };
